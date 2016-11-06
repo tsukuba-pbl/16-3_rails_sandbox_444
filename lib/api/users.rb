@@ -7,7 +7,7 @@ module API
     end
     
     desc 'c user'
-    params do
+    params "asssaa" do
       requires :name ,type: String, desc: 'user n'
     end
     post do
@@ -18,7 +18,7 @@ module API
     params do
   optional :qqqqqq, type: Array[String]
   end
-    post "users" do
+    post "aausers" do
       p(params[:qqqqqq])
       jj = params[:qqqqqq]
       jj.each do |xame|
