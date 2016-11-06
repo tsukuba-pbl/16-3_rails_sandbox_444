@@ -7,10 +7,10 @@ module API
     end
     
     desc 'c user'
-    params "asssaa" do
+    params  do
       requires :name ,type: String, desc: 'user n'
     end
-    post do
+    post "aasx" do
       User.create({:name => params[:name]})
     end
     
