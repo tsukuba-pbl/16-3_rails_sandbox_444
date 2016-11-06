@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'grape', '~> 0.6.1'
-gem 'grape-entity', '~> 0.4.0'
-gem 'grape-swagger', '~> 0.7.2'
+gem 'grape' , '~> 0.18.0'
+gem 'grape-entity'
+gem 'grape-swagger'
 gem 'grape-swagger-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'

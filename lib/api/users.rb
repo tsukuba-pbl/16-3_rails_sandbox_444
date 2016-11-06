@@ -13,6 +13,20 @@ module API
     post do
       User.create({:name => params[:name]})
     end
+    
+    desc 'c users'
+    params do
+  optional :qqqqqq, type: Array[String]
+  end
+    post "users" do
+      p(params[:qqqqqq])
+      jj = params[:qqqqqq]
+      jj.each do |xame|
+        User.create({:name => xame})
+      end
+      
+      1
+    end
 
   end
 end
