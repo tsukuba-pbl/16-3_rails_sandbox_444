@@ -16,15 +16,17 @@ module API
     
     desc 'c users'
     params do
-  optional :qqqqqq, type: Array[String]
+  optional  :users, type: Array do
+    optional  :name, type: String
   end
+    end
     post "aausers" do
-      p(params[:qqqqqq])
-      jj = params[:qqqqqq]
-      jj.each do |xame|
-        User.create({:name => xame})
+      p(params[:users])
+      jj = params[:users]
+      p(jj[1][:name])
+      jj.each do |hhhh|
+        User.create({:name => hhhh[:name]})
       end
-      
       1
     end
 
